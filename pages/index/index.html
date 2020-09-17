@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>TecBlog</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../../assets/tecblog_logo.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+        <body>
+            <header>
+                <div class="container">
+                    <img
+                      src="../../assets/tecblog_logo.png"
+                      alt="Logo TecBlog"
+                    />
+                    
+                    <h1>Tec<span class="branco">Blog</span></h1>
+
+                    <div class="menu-section">
+                        <nav>
+                            <ul>
+                              <li>
+                                <a href="../index/index.html">Home</a>
+                              </li>
+                              <li>
+                                <a href="../jogos/jogos.html">Jogos</a>
+                              </li>
+                              <li>
+                                <a href="../celulares/celulares.html">Celulares</a>
+                              </li>
+                              <li>
+                                <a href="../informatica/informatica.html">Informática</a>
+                              </li>
+                              <li>
+                                <a href="../eletronicos/eletronicos.html">Eletrônicos</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </header>
+            <br>
+            <br>
+            
+           <!-- Define a lista não ordenada com as imagens -->
+	          <ul id="sliders">
+            <!-- 
+              Define uma classe no primeiro item, 
+              para garantir que será mostrado
+              ao acessar a página
+            -->
+              <li class="slider-active"><img src="../../assets/img1.jpg" /></li>
+              <li><img src="../../assets/img2.jpg" /></li>
+              <li><img src="../../assets/img3.png" /></li>
+              <li><img src="../../assets/img4.png" /></li>
+            </ul>
+
+            <section class="hero" >
+                <div class="container">
+                    <div>
+                        <h2>
+                            As melhores dicas de tecnologias em programação, direto ao ponto e do jeito
+                            certo.
+                        </h2>
+                        <p>
+                            No meio de tanta informação e da quantidade de ferramentas que
+                            surgem todos os dias, você precisa de alguém que te leve na direção
+                            certa.
+                        </p>
+                    </div>
+                    <img
+                     src="../../assets/cloud.png"
+                     alt="Computação em Nuvem"
+                    />
+                </div>
+            </section>
+
+            <main>
+                <section class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+                        </div>
+                        <div class="content">
+                            <p class="title text--medium">
+                                Formulário Animado com JS puro e CSS Animation | Mayk Brito
+                            </p>
+                            <div class="info">
+                                <p class="text--medium">57 Min</p>
+                                <p class="price text--medium">Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div class="modal-overlay">
+                <div class="modal">
+                  <a class="close-modal">
+                    <svg viewBox="0 0 20 20">
+                      <path
+                        fill="#000000"
+                        d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="modal-content">
+                    <div class="video-background">
+                      <div class="video-foreground">
+                        <iframe
+                          src="https://www.youtube.com/embed/GykTLqODQuU"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <footer>
+                <div id="rodape">
+                  TecBlog © 2020
+                </div>
+              </footer>
+              
+            <script src="../index/scripts.js"></script>
+        </body>
+    </head>
+</html>

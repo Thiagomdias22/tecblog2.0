@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+/*Limpar formatações padrão*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html, body {
+    height: 100vh;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizeLegibility;
+
+}
+
+/*
+**** Formatação do header ****
+*/
+
+header {
+    background-color: #7159c1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 980px;
+    margin: auto;
+}
+
+header img {
+    margin-left: 10px;
+}
+
+header h1 {
+    margin-left: -240px;
+    color: #4e4e4e;
+}
+
+header .branco {
+	color: white;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255, 0.15)
+}
+
+/*
+**** Formatação do Slider ****
+*/
+
+/**Definiremos as configuraÃ§Ãµes do Container do slide **/
+#sliders{
+	/*Remove o bullet*/
+	list-style: none;  
+	/* Define que position:relative porque os 
+	 * elementos filhos usarão o absolute
+	 */
+	position: relative; 
+	/*Define a largura*/
+	width: 800px;
+	/*Define uma altura*/
+	height: 300px;
+	/*Centralizar na horizontal*/
+	margin: 0 auto;
+	/*Oculta os elementos que ultrapassarem 
+	* as dimensÃµes definidas
+	*/
+
+	
+	overflow: hidden;
+}
+/*Configuremos os itens do slide*/
+#sliders li{
+	/*Definimos como posiÃ§Ã£o absoluta, seguindo o elemento pai*/
+	position: absolute;
+	/*Define que ficarÃ¡ encostado no topo*/
+	top:0;
+	/*Define que ficarÃ¡ enconstado do lado esquerdo*/
+	left:0;
+	/*Coloca a opacidade zero, pra ocultar*/
+	opacity: 0;
+	/*Define ordenaÃ§Ã£o relacionados os elementos*/
+	z-index: 0;
+	/*Cria uma transiÃ§Ã£o da opacidade com 1 segundo*/
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+/* Agora defiremos uma classe 
+ * que mostrar o item atual
+ */
+#sliders li.slider-active{
+	/*Ordena que ficarÃ¡ a frente dos itens*/
+	z-index: 1;
+	/*Mostra o slide atual*/
+	opacity: 1;
+}
+
+
+/*
+**** Formatação da seção hero ****
+*/
+
+h2 {
+    color: rgb(75, 75, 75);
+    font-size: 36px;
+    line-height: 46px;
+}
+
+section.hero {
+    margin: 70px 0;
+}
+  
+section.hero .container {
+    width: 980px;
+    margin: auto;
+    display: flex;
+}
+  
+section.hero p {
+    color: rgb(154, 142, 191);
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px 0px;
+}
+
+section.hero img {
+    width: 170px;
+    height: 150px;
+}
+
+/*
+**** Formatação menu ****
+*/
+
+main {
+    margin-bottom: 80px;
+}
+
+/*
+**** Formatação do cards ****
+*/
+
+.cards {
+    width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-gap: 20px;
+}
+  
+.text--medium {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #7159c1;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.price {
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #7159c1;
+    filter: brightness(90%);
+}
+
+/*
+**** Formatação do modal ****
+*/
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    background-color: #fff;
+    
+    width: 800px;
+    height: 400px;
+    
+    margin: 0 auto;
+    padding: 10px;
+    
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transform: scale(1.2);
+}
+
+.modal .close-modal {
+    position: absolute;
+    cursor: pointer;
+  
+    top: 5px;
+    right: 15px;
+    
+    opacity: 0;
+    
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition-delay: 0.3s;
+}
+
+.modal .close-modal svg {
+    width: 18px;
+    height: 18px;
+}
+
+.modal .modal-content {
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition-delay: 0.3s;
+}
+  
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal.active .modal-content {
+    opacity: 1;
+}
+  
+.modal.active .close-modal {
+    transform: translateY(10px);
+    opacity: 1;
+}
+  
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+    background-color: white;
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+**** Formatação do rodapé ****
+*/
+
+#rodape{
+	clear: both;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+	padding: 15px;
+	background: #7159c1;
+}
+
+button {
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #7159c1;
+    filter: brightness(90%);
+}
