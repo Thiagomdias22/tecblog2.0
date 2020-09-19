@@ -70,52 +70,29 @@ header nav ul li a:hover {
 **** Formatação do Slider ****
 */
 
-/**Definiremos as configuraÃ§Ãµes do Container do slide **/
 #sliders{
-	/*Remove o bullet*/
 	list-style: none;  
-	/* Define que position:relative porque os 
-	 * elementos filhos usarão o absolute
-	 */
 	position: relative; 
-	/*Define a largura*/
 	width: 90%;
     max-width: 800px;
-	/*Define uma altura*/
 	height: 300px;
-	/*Centralizar na horizontal*/
     margin: auto;
-	/*Oculta os elementos que ultrapassarem 
-	* as dimensÃµes definidas
-	*/
-	
 	overflow: hidden;
 }
-/*Configuremos os itens do slide*/
+
 #sliders li{
-	/*Definimos como posiÃ§Ã£o absoluta, seguindo o elemento pai*/
 	position: absolute;
-	/*Define que ficarÃ¡ encostado no topo*/
 	top:0;
-	/*Define que ficarÃ¡ enconstado do lado esquerdo*/
 	left:0;
-	/*Coloca a opacidade zero, pra ocultar*/
 	opacity: 0;
-	/*Define ordenaÃ§Ã£o relacionados os elementos*/
 	z-index: 0;
-	/*Cria uma transiÃ§Ã£o da opacidade com 1 segundo*/
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
 	transition: opacity 1s;
 }
 
-/* Agora defiremos uma classe 
- * que mostrar o item atual
- */
 #sliders li.slider-active{
-	/*Ordena que ficarÃ¡ a frente dos itens*/
 	z-index: 1;
-	/*Mostra o slide atual*/
 	opacity: 1;
 }
 
@@ -260,22 +237,16 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    
     background-color: #fff;
-    
     width: 800px;
     height: 400px;
-    
     margin: 0 auto;
     padding: 10px;
-    
     border-radius: 3px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    
     opacity: 0;
     overflow-y: auto;
     visibility: hidden;
-    
     transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
     transform: scale(1.2);
 }
@@ -283,12 +254,9 @@ main {
 .modal .close-modal {
     position: absolute;
     cursor: pointer;
-  
     top: 5px;
     right: 15px;
-    
     opacity: 0;
-    
     transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
     transition-delay: 0.3s;
 }
@@ -353,12 +321,146 @@ main {
 	background: #7159c1;
 }
 
-button {
+#rodape .buttonPlay {
     margin-left: auto;
     padding: 5px 20px;
     border-radius: 20px;
     background-color: #7159c1;
     filter: brightness(90%);
+}
+
+/*
+**** Formatação Entre em contato ****
+*/
+
+.contato {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+}
+
+.contato p {
+    color: rgb(154, 142, 191);
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin: 10px 0px 0px;
+}
+
+.contato a {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(113, 89, 193);
+  margin: 5px 10px 10px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+
+}
+
+.contato a:hover {
+    background: rgb(154, 142, 191);
+}
+
+/*
+**** Formatação do Formulario ****
+*/
+
+#form {
+    width:100%;
+  
+    background: rgb(114, 92, 180);
+    padding: 80px 0;
+    margin:0;
+  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#form form {
+    width: 90%;
+    max-width: 980px;
+  
+    background: white;
+    
+    padding: 40px;
+    
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
+      0px 10px 20px -10px rgba(0, 0, 0, 0.1)
+}
+  
+#form h3 {
+    margin-bottom: 30px
+}
+  
+#form form label {
+    display: none;
+}
+  
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+  
+.form-group label.right-inline {
+    text-align: right;  
+    padding-right: 8px;
+    padding-left: 10px;
+    width: auto;
+}
+  
+.form-group .input-control {
+    flex: 1 1;
+    display: block;
+    margin: -4px 8px 10px;
+    padding: 12px;
+    font-size: 1.6rem;
+}
+
+button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(113, 89, 193);
+  margin: 15px 0px 0px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+  
+#form .button {
+    margin: 20px 8px 10px;
+}
+
+/*
+**** Formatação do Scroll ****
+*/
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(146, 122, 219);
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+  
+#myBtn:hover {
+    color: #FFF;
+    background-color:  rgb(154, 142, 191);
 }
 
 /* media queries */
@@ -457,5 +559,11 @@ button {
         font-size: 3rem;
         line-height: 4rem;
         display: block;
+    }
+}
+
+@media (max-width: 732px) {
+    .form-group {
+        display: grid;
     }
 }
