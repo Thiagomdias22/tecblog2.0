@@ -322,8 +322,8 @@ main {
 }
 
 #rodape .buttonPlay {
-    margin-left: auto;
-    padding: 5px 20px;
+    margin: 0;
+    padding: 0;
     border-radius: 20px;
     background-color: #7159c1;
     filter: brightness(90%);
