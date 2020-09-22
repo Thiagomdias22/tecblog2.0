@@ -435,7 +435,7 @@ function preencher() {
     page = window.location.pathname.split("/").pop();
   
     switch (page) {
-      case ' ': VideoIndex(); break;
+      case "":
       case 'index.html': VideoIndex(); break;
       case 'jogos.html': VideoJogos(); break;
       case 'informatica.html': VideoInformatica(); break;
