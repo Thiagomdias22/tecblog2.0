@@ -397,25 +397,15 @@ main {
     margin-bottom: 30px
 }
   
-#form form label {
-    display: none;
-}
-  
 .form-group {
     display: flex;
     flex-direction: row;
 }
   
-.form-group label.right-inline {
-    text-align: right;  
-    padding-right: 8px;
-    padding-left: 10px;
-    width: auto;
-}
-  
 .form-group .input-control {
     flex: 1 1;
     display: block;
+    font-weight: 500;
     margin: -4px 8px 10px;
     padding: 12px;
     font-size: 1.6rem;
@@ -436,6 +426,12 @@ button {
   
 #form .button {
     margin: 20px 8px 10px;
+}
+
+#form textarea {
+    font-size: 1.55rem;
+    font-family: sans-serif;
+    resize: vertical;
 }
 
 /*
