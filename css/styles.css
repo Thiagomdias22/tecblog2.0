@@ -23,6 +23,51 @@ body {
     font-size: 1.6rem;
 }
 
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
 /*
 **** Formatação do header ****
 */
@@ -70,30 +115,86 @@ header nav ul li a:hover {
 **** Formatação do Slider ****
 */
 
-#sliders{
-	list-style: none;  
-	position: relative; 
-	width: 90%;
-    max-width: 800px;
-	height: 300px;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 980px;
+    position: relative;
     margin: auto;
-	overflow: hidden;
 }
-
-#sliders li{
-	position: absolute;
-	top:0;
-	left:0;
-	opacity: 0;
-	z-index: 0;
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	transition: opacity 1s;
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
 }
-
-#sliders li.slider-active{
-	z-index: 1;
-	opacity: 1;
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
@@ -459,6 +560,27 @@ button {
     background-color:  rgb(154, 142, 191);
 }
 
+#myBtn1 {
+    display: block; 
+    position: absolute; 
+    margin-left: 10px;
+    z-index: 99; 
+    border: #bbb; 
+    outline: none; 
+    background-color: rgb(113, 89, 193);
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    text-decoration: none; 
+    font-size: 18px; 
+}
+  
+#myBtn1:hover {
+    color: #FFF;
+    background-color:  rgb(154, 142, 191);
+}
+
 /* media queries */
 @media (max-width: 904px) {
     html {
@@ -475,9 +597,10 @@ button {
     .hero .container img {
         order: -1;
         margin: auto;
+        margin-bottom: 10px;
     }
 
-    #sliders {
+    .slideshow-container, .dot {
         display: none;
     }
 }

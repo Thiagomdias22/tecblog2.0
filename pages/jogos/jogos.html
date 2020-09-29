@@ -45,18 +45,43 @@
             <br>
             <br>
             
-           <!-- Define a lista não ordenada com as imagens -->
-	          <ul id="sliders">
-            <!-- 
-              Define uma classe no primeiro item, 
-              para garantir que será mostrado
-              ao acessar a página
-            -->
-              <li class="slider-active"><img src="../../assets/img1.jpg" /></li>
-              <li><img src="../../assets/img2.jpg" /></li>
-              <li><img src="../../assets/img3.png" /></li>
-              <li><img src="../../assets/img4.png" /></li>
-            </ul>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../../assets/img1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../../assets/img2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../assets/img3.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../../assets/img4.png" style="width:100%">
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
 
             <section class="hero" >
                 <div class="container">
