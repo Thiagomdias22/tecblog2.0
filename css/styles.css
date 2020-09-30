@@ -714,6 +714,9 @@ button, option {
 @media (max-width: 432px) {
     #rodape {
         font-size: 100%;
-        margin-left: 75px;
+    }
+    #myBtn1 {
+        margin-top: 7px;
+        font-size: 70%;
     }
 }
