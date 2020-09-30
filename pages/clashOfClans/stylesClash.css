@@ -8,17 +8,18 @@ body {
   height: 100vh;
   align-items: center;
   justify-items: center;
-	background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
-	background-size: cover;
-	font: 14px/20px "Lato", Arial, sans-serif;
-	color: #9E9E9E;
+  background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
 	
 }
 
 .slide-container {
 	margin: auto;
-	width: 600px;
+	width: 60%;
+	margin-top: 60px;
 	text-align: center;
 }
 
@@ -231,7 +232,7 @@ body {
 }
 
 .slick-prev {
-	left: 100px;
+	left: auto;
 	z-index: 999;
 }
 
@@ -254,4 +255,11 @@ body {
   100% {
      background-position: -48px;
   }
+}
+
+@media (max-width: 695px) {
+	.slide-container {
+		width: 70%;
+	}
+
 }

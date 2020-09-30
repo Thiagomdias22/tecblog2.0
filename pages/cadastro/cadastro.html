@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Contato</title>
+        <title>Cadastro</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="../../assets/tecblog_logo.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <header>
             <div class="container">
                 <img
-                  src="../../assets/logo.png"
+                src="../../assets/logo.png"
                   alt="Logo TecBlog"
                 />
 
@@ -48,7 +48,7 @@
 
         <section id="form">
             <form>
-              <h3>Digite sua mensagem!</h3>
+              <h3>Preencha todos os dados!</h3>
               <div class="form-group">
                 <input type="text" id="nome" class="input-control" name="Nome" placeholder="Nome" />
       
@@ -62,11 +62,42 @@
               </div>
 
               <div class="form-group">
-                <textarea class="input-control" name="Mensagem" placeholder="Digite a sua mensagem" cols="30" rows="7"></textarea>
+                <select class="country" name="country">
+                    <option value="" disabled selected>Selecione o seu Gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                  </select>
+
+                  <select class="country" name="country">
+                    <option value="" disabled selected>Sistema Operacional Favorito</option>
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                    <option value="macos">MACos</option>
+                    <option value="android">Android</option>
+                    <option value="ios">IOS</option>
+                  </select>
+
+                  <select class="country" name="country">
+                    <option value="" disabled selected>Navegador Favorito</option>
+                    <option value="chrome">Google Chrome</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value=firefox>Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="explorer">Internet Explorer</option>
+                    <option value="safari">Safari</option>
+                  </select>
               </div>
+
+              <div class="form-group">
+                <input type="text" class="input-control" name="Ocupacao" placeholder="Ocupação" />
+      
+                <input type="text" class="input-control" name="Jogo" placeholder="Jogo Favorito" />
+              </div>
+
       
               <div class="form-group">
-                <button type="submit" class="button" onclick="pegarNomeContato()">Enviar</button>
+                <button type="submit" class="button" onclick="pegarNomeCadastro()">Enviar</button>
               </div>
       
             </form>

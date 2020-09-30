@@ -1,3 +1,33 @@
+function mudarImgFooter(){
+  
+  footer = document.getElementById('form');
+
+    img = ''
+
+    switch(window.location.pathname.split("/").pop()){
+        case 'cadastro.html': img = '../../assets/fundo1.gif'; break;
+        case 'contato.html': img = '../../assets/fundo5.gif'; break;
+    }
+
+    footer.style.backgroundImage = `url(${img})`;
+}
+
+window.onload = mudarImgFooter;
+
+function pegarNomeCadastro() {
+  var valor = "";
+
+  valor = document.getElementById('nome').value;
+  alert (`${valor}`+' seu cadastro foi realizado com sucesso')
+}
+
+function pegarNomeContato() {
+  var valor = "";
+
+  valor = document.getElementById('nome').value;
+  alert (`${valor}`+' sua mensagem foi enviada com sucesso')
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
