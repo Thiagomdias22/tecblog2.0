@@ -1,4 +1,10 @@
-function mudarImgFooter(){
+/*
+==========================================================
+    Script que faz a mudança de imagens do Formulario
+==========================================================
+*/
+
+function mudarImgForm(){
   
   footer = document.getElementById('form');
 
@@ -12,7 +18,14 @@ function mudarImgFooter(){
     footer.style.backgroundImage = `url(${img})`;
 }
 
-window.onload = mudarImgFooter;
+window.onload = mudarImgForm;
+window.onload = automaticSlider();
+
+/*
+==========================================================
+    Script que pega o nome da pessoa que cadastrou
+==========================================================
+*/
 
 function pegarNomeCadastro() {
   var valor = "";
@@ -21,12 +34,24 @@ function pegarNomeCadastro() {
   alert (`${valor}`+' seu cadastro foi realizado com sucesso')
 }
 
+/*
+===============================================================
+    Script que pega o nome da pessoa que entrou em contato
+===============================================================
+*/
+
 function pegarNomeContato() {
   var valor = "";
 
   valor = document.getElementById('nome').value;
   alert (`${valor}`+' sua mensagem foi enviada com sucesso')
 }
+
+/*
+==========================================================
+    Script que faz a animação do slider
+==========================================================
+*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -55,10 +80,35 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  }
+}
 
 /*
-**** Criando o Scroll****
+==============================================================
+    Identifica se está pausado ou não e deixa automatico
+==============================================================
+*/
+
+isPause = false;
+    
+function setPause(value) {
+    isPause = value;
+}
+
+function automaticSlider() {
+    
+  currentSlide(1);
+  
+  setInterval(() => {
+    if (!isPause) {
+        plusSlides(1);
+      }
+    }, 3000);
+}
+
+/*
+==========================================================
+    Script que faz a criacao do scrool
+==========================================================
 */
 
 mybutton = document.getElementById("myBtn");
@@ -82,7 +132,9 @@ function topFunction() {
 }
 
 /*
-**** Criando o Player ****
+==========================================================
+    Script que faz a criacao do player de musica
+==========================================================
 */
 
 // player

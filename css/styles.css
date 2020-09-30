@@ -23,10 +23,14 @@ body {
     font-size: 1.6rem;
 }
 
+/*
+**** Formatação da tela de carregamento ****
+*/
+
 .loader-wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #242f3f;
@@ -115,19 +119,18 @@ header nav ul li a:hover {
 **** Formatação do Slider ****
 */
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 980px;
     position: relative;
     margin: auto;
 }
   
-  /* Hide the images by default */
+/* Ocultar as imagens por padrão */
 .mySlides {
     display: none;
 }
   
-  /* Next & previous buttons */
+/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -143,27 +146,16 @@ header nav ul li a:hover {
     user-select: none;
 }
   
-  /* Position the "next button" to the right */
+/* Posicione o "botão próximo" à direita */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
   
-  /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
   
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
-  /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -179,7 +171,7 @@ header nav ul li a:hover {
     background-color: #717171;
 }
   
-  /* Fading animation */
+/* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -584,6 +576,10 @@ button, option {
     background-color:  rgb(154, 142, 191);
 }
 
+/*
+**** Formatação do botão ClashOfClans ****
+*/
+
 #myBtn1 {
     display: flex; 
     position: absolute; 
@@ -709,8 +705,15 @@ button, option {
     .form-group {
         display: grid;
     }
-    #myBtn1 {
+    #myBtn1, #rodape {
         font-size: 100%;
         margin-top: 4px;
+    }
+}
+
+@media (max-width: 432px) {
+    #rodape {
+        font-size: 100%;
+        margin-left: 75px;
     }
 }

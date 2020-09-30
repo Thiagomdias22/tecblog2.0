@@ -1,3 +1,9 @@
+/*
+==========================================================
+    Script que faz a animação do menu responsivo
+==========================================================
+*/
+
 let show = true;
 
 const menuSection = document.querySelector(".menu-section")

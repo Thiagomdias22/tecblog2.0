@@ -1,3 +1,9 @@
+/*
+==========================================================
+    Script que faz a animação dos cards do clash of clans
+==========================================================
+*/
+
 (function() {
   
   var slideContainer = $('.slide-container');
@@ -18,6 +24,12 @@
   });
   
 })();
+
+/*
+==========================================================
+    Script que faz a animação do DryBones
+==========================================================
+*/
 
 const dryBones = document.getElementById('dryBones');
 
