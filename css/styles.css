@@ -608,7 +608,7 @@ button, option {
     }
 }
 
-@media (max-width: 761px) {
+@media (max-width: 770px) {
     .hero .container {
         flex-direction: column;
         text-align: center;
