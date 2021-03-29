@@ -26,7 +26,7 @@ Caso preferir, poderá acessar online no link -> [tecBlog](https://tec-blog.verc
 
 ### Tela Inicial
 ![](/Screenshots/tela_inicial1.png)
-### continuação da Tela Inicial
+### Continuação da Tela Inicial
 ![](/Screenshots/tela_inicial2.png)
 ### Tela Cadastro
 ![](/Screenshots/tela_cadastro.png)
