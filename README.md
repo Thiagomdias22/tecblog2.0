@@ -8,31 +8,40 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Thiagomdias22/tecblog2.0?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Thiagomdias22/tecblog2.0?style=for-the-badge)
 
-<img src="https://github.com/Thiagomdias22/ipet2.0/blob/master/screenshots/logogrande.png" width="400px;" alt="Logo iPet">
+<img src="https://github.com/Thiagomdias22/tecblog2.0/blob/master/Screenshots/logo_tecblog.png" width="400px;" alt="Logo iPet">
 
-O iPet é um aplicativo android que possui o intuito de conectar pessoas com interesses em ajudar Ongs de animais com campanhas abertas e protetores independentes, sendo o seu foco em animais de estimação.
+O tecBlog é um projeto final da matéria de WEB I, que exigia colocar os princpais conceitos de HTML, CSS e JavaScript em prática.
 
-## 🚀 Instalando iPet
-
-Para instalar o iPet, siga estas etapas:
-
-1. Faça um clone deste repositório em sua máquina
-2. Extraia o zip em uma pasta de sua preferência
-3. Abra a pasta extraida em uma IDE de sua preferência, recomendamos Android Studio
-4. Execute o projeto no emulador
-
-### ▶️ Playstore
+### ▶️ Site
 
 Caso preferir, poderá acessar online no link -> [tecBlog](https://tec-blog.vercel.app/)
 
 ## 🔋 Stacks Utilizadas
 
-1. Java
-2. Firebase
-3. Android Studio
+1. HTML
+2. CSS
+3. JavaScript
 
 ## 📷 Screenshots
 
+### Tela Inicial
+![](/Screenshots/tela_inicial1.png)
+### continuação da Tela Inicial
+![](/Screenshots/tela_inicial2.png)
+### Tela Cadastro
+![](/Screenshots/tela_cadastro.png)
+### Tela Celulares
+![](/Screenshots/tela_celulares.png)
+### Tela Card Clash Of Clans
+![](/Screenshots/tela_clashOfClans.png)
+### Tela Contato
+![](/Screenshots/tela_contato.png)
+### Tela Eletrônicos
+![](/Screenshots/tela_eletronicos.png)
+### Tela Informática
+![](/Screenshots/tela_informatica.png)
+### Tela Jogos
+![](/Screenshots/tela_jogos.png)
 
 
 ## 🤝 Colaboradores
