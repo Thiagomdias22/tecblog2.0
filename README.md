@@ -10,7 +10,7 @@
 
 <img src="https://github.com/Thiagomdias22/tecblog2.0/blob/master/Screenshots/logo_tecblog.png" width="400px;" alt="Logo iPet">
 
-O tecBlog é um projeto final da matéria de WEB I, que exigia colocar os princpais conceitos de HTML, CSS e JavaScript em prática.
+O TecBlog é um projeto final da matéria de WEB I, que exigia colocar os princpais conceitos de HTML, CSS e JavaScript em prática.
 
 ### ▶️ Site
 
